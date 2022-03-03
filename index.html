@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Animated Vertical Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    .news-carousel {
+        font-family: arial;
+        width: 630px;
+        height: 250px;
+        /*background-color: #222;*/
+        overflow: hidden;
+    }
+    .news-carousel .slide img {
+    width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid white;
+    }
+    .news-carousel .slide .caption {
+        display: inline-block;
+        width: 400px;
+        vertical-align: top;
+    }
+    .news-carousel .slide h2 {
+        margin-top: 0;
+    }
+    .news-carousel .slide p {
+        text-align: justify;
+    }
+    .news-carousel .slide a {
+        float: right;
+        color: white;
+    }
+    @keyframes rotate {
+        0% {transform: translateY(0px);      }
+        30% {transform: translateY(0px);     }
+        33% {transform: translateY(-255px);  }
+        63% {transform: translateY(-255px);     }
+        66% {transform: translateY(-510px);  }
+        96% {transform: translateY(-510px); }
+        100% {transform: translateY(0px); }
+    }
+    .news-carousel .film {
+        animation: rotate 45s infinite linear;
+    }
+    </style>
+</head>
+<body>
+    <section class="news-carousel">
+        <div class="film">
+        <article class="slide">
+            <img src="42-400x500.jpg" alt="First News Title">
+            <div class="caption">
+                <h2>First News Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, repudiandae velit officiis vel eos sequi molestiae nobis porro nam voluptate nostrum cum neque quis. Vitae veniam cum iste consequuntur magnam!</p>
+                <p>Lorem ipsum dolor sit amet !</p>
+                <a href="">read more➤➤➤</a>
+            </div>
+        </article>
+        
+        <article class="slide">
+            <img src="342-400x500.jpg" alt="Second News Title">
+            <div class="caption">
+                <h2>Second News Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, repudiandae velit officiis vel eos sequi molestiae nobis porro nam voluptate nostrum cum neque quis. Vitae veniam cum iste consequuntur magnam!</p>
+                <p>Lorem ipsum dolor sit amet consect!</p>
+                <a href="">read more➤➤➤</a>
+            </div>
+        </article>
+        
+        <article class="slide">
+            <img src="757-400x500.jpg" alt="Third News Title">
+            <div class="caption">
+                <h2>Third News Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, repudiandae velit officiis vel eos sequi molestiae nobis porro nam voluptate nostrum cum neque quis. Vitae veniam cum iste consequuntur magnam!</p>
+                <p>Lorem ipsum dolor sit amet !</p>
+                <a href="">read more➤➤➤</a>
+            </div>
+            
+        </article>
+    </div>
+    </section>
+</body>
+</html>
